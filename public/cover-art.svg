@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 900" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="40" y1="30" x2="850" y2="860" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1D3840"/>
+      <stop offset=".52" stop-color="#18272A"/>
+      <stop offset="1" stop-color="#0C1518"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientTransform="matrix(421 351 -337 404 444 381)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F4A477" stop-opacity=".93"/>
+      <stop offset=".39" stop-color="#D56E5D" stop-opacity=".72"/>
+      <stop offset="1" stop-color="#8C4849" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="moon" x1="286" y1="151" x2="580" y2="556" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFE8C6"/>
+      <stop offset="1" stop-color="#F3A781"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#bg)" d="M0 0h900v900H0z"/>
+  <circle cx="478" cy="463" r="352" fill="url(#glow)"/>
+  <circle cx="438" cy="360" r="164" fill="url(#moon)"/>
+  <path d="M0 626c119-59 212-50 308 6 108 64 195 61 291-1 102-66 190-66 301 0v269H0V626Z" fill="#17282A"/>
+  <path d="M0 724c112-54 206-45 310 11 105 57 202 52 300-10 102-65 191-56 290-8v183H0V724Z" fill="#101C1E"/>
+  <g fill="#FFF4DE" fill-opacity=".8">
+    <circle cx="139" cy="171" r="2"/><circle cx="728" cy="198" r="3"/><circle cx="793" cy="419" r="2"/>
+    <circle cx="212" cy="320" r="2"/><circle cx="666" cy="117" r="2"/><circle cx="98" cy="478" r="3"/>
+  </g>
+  <text x="62" y="817" fill="#FFF4DE" font-family="Arial, sans-serif" font-size="30" font-weight="700" letter-spacing="8">NOVA BLUE</text>
+  <text x="64" y="856" fill="#F6B49A" font-family="Arial, sans-serif" font-size="18" letter-spacing="5">AFTERGLOW · SINGLE</text>
+</svg>

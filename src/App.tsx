@@ -49,14 +49,6 @@ function PlatformIcon({ name }: { name: string }) {
   }
 }
 
-function GothamHeroArt() {
-  return (
-    <>
-      <img className="hero-bats" src="/images/gotham/02-bats-abstract-motion.webp" alt="" />
-    </>
-  )
-}
-
 function SilverMistDivider({ withMark = false }: { withMark?: boolean }) {
   return (
     <div className={`release-divider${withMark ? ' release-divider-with-mark' : ''}`} aria-hidden="true">
@@ -115,7 +107,6 @@ function App() {
       </header>
 
       <section className="hero" id="top" aria-labelledby="release-title">
-        <GothamHeroArt />
         <div className="hero-copy">
           <h1 id="release-title">{release.title}</h1>
           {release.releaseDate && <p className="release-date">{release.releaseDate}</p>}
@@ -123,9 +114,9 @@ function App() {
         <div className="hero-art-wrap">
           <img className="hero-art" src={release.artwork} alt={`${release.title} single artwork`} />
         </div>
+        <img className="silver-mist" src="/images/gotham/08-silver-mist.webp" alt="" /><SilverMistDivider />
       </section>
 
-      <SilverMistDivider />
 
       <section className="video-section" aria-labelledby="video-heading">
         <div className="section-heading video-heading">
@@ -177,6 +168,8 @@ function App() {
       </section>
 
       <footer className="footer">
+              <img className="hero-bats" src="/images/gotham/02-bats-abstract-motion.webp" alt="" />
+
         <img className="footer-cityscape" src="/images/gotham/01-gotham-skyline.webp" alt="" />
         <nav className="social-links" aria-label="Social media">
           {socials.map((social) => (

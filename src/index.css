@@ -1,4 +1,12 @@
 @font-face {
+  font-family: 'UnifrakturCook';
+  src: url('/font/UnifrakturCook-Bold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
   font-family: 'DRUKWIDE';
   src: url('/font/DrukWideMediumTrial.otf') format('opentype');
   font-style: normal;

@@ -5,9 +5,9 @@
 export const release = {
   isSample: true,
   artist: 'Unozero',
-  title: 'Afterglow',
-  releaseDate: 'OUT NOW · 2026',
-  artwork: '/cover-art.svg',
+  title: 'Gotham',
+  releaseDate: 'OUT NOW',
+  artwork: '/covers/gotham.png',
   youtubeVideoUrl: '',
   platforms: {
     spotify: 'https://open.spotify.com/',

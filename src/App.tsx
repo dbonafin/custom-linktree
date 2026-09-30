@@ -49,6 +49,22 @@ function PlatformIcon({ name }: { name: string }) {
   }
 }
 
+function GothamHeroArt() {
+  return (
+    <>
+      <img className="hero-bats" src="/images/gotham/02-bats-abstract-motion.webp" alt="" />
+    </>
+  )
+}
+
+function SilverMistDivider({ withMark = false }: { withMark?: boolean }) {
+  return (
+    <div className={`release-divider${withMark ? ' release-divider-with-mark' : ''}`} aria-hidden="true">
+      {withMark && <img className="release-mark" src="/images/gotham/03-druk-wide-10.webp" alt="" />}
+    </div>
+  )
+}
+
 function safeUrl(url: string | undefined) {
   if (!url) return undefined
   try {
@@ -91,29 +107,28 @@ function App() {
       {release.isSample && (
         <div className="demo-banner">SAMPLE PAGE · Replace demo details and links in <code>src/release.ts</code> before publishing</div>
       )}
+      <img className="hero-moon" src="/images/gotham/04-moon-halo.webp" alt="" />
       <header className="topbar">
         <a className="wordmark" href="#top" aria-label={`${release.artist} home`}>
           <span>{release.artist}</span>
         </a>
-        <span className="topbar-note">THE LATEST RELEASE</span>
       </header>
 
       <section className="hero" id="top" aria-labelledby="release-title">
+        <GothamHeroArt />
         <div className="hero-copy">
-          <p className="eyebrow"><span className="live-dot" /> OUT NOW</p>
           <h1 id="release-title">{release.title}</h1>
-          <p className="hero-artist">A new single by <strong>{release.artist}</strong></p>
           {release.releaseDate && <p className="release-date">{release.releaseDate}</p>}
         </div>
         <div className="hero-art-wrap">
           <img className="hero-art" src={release.artwork} alt={`${release.title} single artwork`} />
-          <span className="art-caption">SINGLE · {release.artist}</span>
         </div>
       </section>
 
+      <SilverMistDivider />
+
       <section className="video-section" aria-labelledby="video-heading">
         <div className="section-heading video-heading">
-          <p className="eyebrow">THE OFFICIAL VIDEO</p>
           <h2 id="video-heading">Watch {release.title}</h2>
         </div>
         <div className="video-frame">
@@ -134,11 +149,11 @@ function App() {
         </div>
       </section>
 
+      <SilverMistDivider withMark />
+
       <section className="listen-section" aria-labelledby="listen-heading">
         <div className="listen-intro">
-          <p className="eyebrow">TAKE IT WITH YOU</p>
           <h2 id="listen-heading">Listen everywhere</h2>
-          <p>Choose your favorite platform and press play.</p>
         </div>
         {platforms.length > 0 ? (
           <div className="platform-grid">
@@ -162,7 +177,7 @@ function App() {
       </section>
 
       <footer className="footer">
-        <p className="eyebrow">FOLLOW ALONG</p>
+        <img className="footer-cityscape" src="/images/gotham/01-gotham-skyline.webp" alt="" />
         <nav className="social-links" aria-label="Social media">
           {socials.map((social) => (
             <a href={social.url} key={social.name} target="_blank" rel="noreferrer">

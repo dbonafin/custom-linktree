@@ -4,7 +4,7 @@
  */
 export const release = {
   isSample: true,
-  artist: 'NOVA BLUE',
+  artist: 'Unozero',
   title: 'Afterglow',
   releaseDate: 'OUT NOW · 2026',
   artwork: '/cover-art.svg',
@@ -20,8 +20,7 @@ export const release = {
     soundcloud: 'https://soundcloud.com/',
   },
   socials: {
-    instagram: 'https://www.instagram.com/',
-    tiktok: 'https://www.tiktok.com/',
-    youtube: 'https://www.youtube.com/',
+    instagram: 'https://www.instagram.com/10unozero/',
+    tiktok: 'https://www.tiktok.com/@10unozero10?_r=1&_t=ZN-9AAHM9e14JK',
   },
 } as const

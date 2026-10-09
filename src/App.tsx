@@ -109,18 +109,18 @@ function App() {
       <section className="hero" id="top" aria-labelledby="release-title">
         <div className="hero-copy">
           <h1 id="release-title">{release.title}</h1>
-          {release.releaseDate && <p className="release-date">{release.releaseDate}</p>}
+          {/* {release.releaseDate && <p className="release-date">{release.releaseDate}</p>} */}
         </div>
-        <div className="hero-art-wrap">
+        {/* <div className="hero-art-wrap">
           <img className="hero-art" src={release.artwork} alt={`${release.title} single artwork`} />
-        </div>
-        <img className="silver-mist" src="/images/gotham/08-silver-mist.webp" alt="" /><SilverMistDivider />
+        </div> */}
+        {/* <img className="silver-mist" src="/images/gotham/08-silver-mist.webp" alt="" /><SilverMistDivider /> */}
       </section>
 
 
       <section className="video-section" aria-labelledby="video-heading">
         <div className="section-heading video-heading">
-          <h2 id="video-heading">Watch {release.title}</h2>
+          {/* <h2 id="video-heading">Watch {release.title}</h2> */}
         </div>
         <div className="video-frame">
           {videoId ? (

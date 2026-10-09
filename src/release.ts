@@ -1,14 +1,10 @@
-/**
- * Sample release content. Replace these values with your own single before deploying.
- * Remove entries or leave their URL empty to hide optional links on the page.
- */
 export const release = {
-  isSample: true,
+  isSample: false,
   artist: 'Unozero',
   title: 'Gotham',
   releaseDate: 'OUT NOW',
   artwork: '/covers/gotham.png',
-  youtubeVideoUrl: '',
+  youtubeVideoUrl: 'https://youtu.be/wzQcMocSYh0?si=ZxxZ0KjRcYDhb5bL',
   platforms: {
     spotify: 'https://open.spotify.com/',
     appleMusic: 'https://music.apple.com/',
@@ -22,5 +18,6 @@ export const release = {
   socials: {
     instagram: 'https://www.instagram.com/10unozero/',
     tiktok: 'https://www.tiktok.com/@10unozero10?_r=1&_t=ZN-9AAHM9e14JK',
-  },
+    youtube: 'https://youtube.com/@10unozero?si=9whroMKcfqgHLz0g', 
+  }
 } as const

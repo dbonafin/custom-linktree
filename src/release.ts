@@ -6,13 +6,11 @@ export const release = {
   artwork: '/covers/gotham.png',
   youtubeVideoUrl: 'https://youtu.be/wzQcMocSYh0?si=ZxxZ0KjRcYDhb5bL',
   platforms: {
-    spotify: 'https://open.spotify.com/',
-    appleMusic: 'https://music.apple.com/',
-    youtubeMusic: 'https://music.youtube.com/',
-    amazonMusic: 'https://music.amazon.com/',
-    deezer: 'https://www.deezer.com/',
-    tidal: 'https://tidal.com/',
-    bandcamp: 'https://bandcamp.com/',
+    spotify: 'https://open.spotify.com/intl-it/album/2tYnVG9N1o7R4jKeuATmYi',
+    appleMusic: 'https://music.apple.com/it/album/gotham-single/6820189416',
+    amazonMusic: 'https://music.amazon.co.uk/tracks/B0HM9MRR8N',
+    deezer: 'https://www.deezer.com/en/album/1116175902',
+    tidal: 'https://tidal.com/album/568009697/track/568009700',
     soundcloud: 'https://soundcloud.com/',
   },
   socials: {

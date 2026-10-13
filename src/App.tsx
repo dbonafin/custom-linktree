@@ -9,7 +9,6 @@ const platformNames: Record<string, string> = {
   deezer: 'Deezer',
   tidal: 'TIDAL',
   bandcamp: 'Bandcamp',
-  soundcloud: 'SoundCloud',
 }
 
 const socialNames: Record<string, string> = {
@@ -38,8 +37,8 @@ function PlatformIcon({ name }: { name: string }) {
       return <svg {...common}><path d="m4 8 3-3 3 3-3 3-3-3Zm7 0 3-3 3 3-3 3-3-3Zm7 0 2-2 2 2-2 2-2-2ZM7.5 12l3-3 3 3-3 3-3-3Zm7 0 3-3 3 3-3 3-3-3Z" fill="currentColor"/></svg>
     case 'bandcamp':
       return <svg {...common}><path d="M6.5 18 12.7 6h5L11.5 18h-5Z" fill="currentColor"/><path d="M4.5 21h15" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round"/></svg>
-    case 'soundcloud':
-      return <svg {...common}><path d="M4 14v4m3-7v7m3-10v10m3-13v13" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/><path d="M14 10a4.6 4.6 0 0 1 8.1 3 3.5 3.5 0 0 1-3.5 3.5H13V10h1Z" fill="currentColor"/></svg>
+    case 'youtube':
+      return <svg {...common}><path d="M21.6 7.2a3 3 0 0 0-2.1-2.1C17.7 4.6 12 4.6 12 4.6s-5.7 0-7.5.5a3 3 0 0 0-2.1 2.1 31.2 31.2 0 0 0 0 9.6 3 3 0 0 0 2.1 2.1c1.8.5 7.5.5 7.5.5s5.7 0 7.5-.5a3 3 0 0 0 2.1-2.1 31.2 31.2 0 0 0 0-9.6Z" fill="currentColor"/><path d="m10 8.8 5.5 3.2-5.5 3.2V8.8Z" fill="#101010"/></svg>
     case 'instagram':
       return <svg {...common}><rect x="3.2" y="3.2" width="17.6" height="17.6" rx="5.2" stroke="currentColor" strokeWidth="1.8"/><circle cx="12" cy="12" r="4.1" stroke="currentColor" strokeWidth="1.8"/><circle cx="17.7" cy="6.6" r="1.15" fill="currentColor"/></svg>
     case 'tiktok':
@@ -118,10 +117,7 @@ function App() {
       </section>
 
 
-      <section className="video-section" aria-labelledby="video-heading">
-        <div className="section-heading video-heading">
-          {/* <h2 id="video-heading">Watch {release.title}</h2> */}
-        </div>
+      <section className="video-section" aria-label={`${release.title} official video`}>
         <div className="video-frame">
           {videoId ? (
             <iframe

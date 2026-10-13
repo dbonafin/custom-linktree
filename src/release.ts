@@ -10,7 +10,6 @@ export const release = {
     appleMusic: 'https://music.apple.com/it/album/gotham-single/6820189416',
     amazonMusic: 'https://music.amazon.co.uk/tracks/B0HM9MRR8N',
     deezer: 'https://www.deezer.com/en/album/1116175902',
-    tidal: 'https://tidal.com/album/568009697/track/568009700',
   },
   socials: {
     instagram: 'https://www.instagram.com/10unozero/',

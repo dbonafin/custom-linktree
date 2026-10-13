@@ -116,28 +116,6 @@ function App() {
         {/* <img className="silver-mist" src="/images/gotham/08-silver-mist.webp" alt="" /><SilverMistDivider /> */}
       </section>
 
-
-      <section className="video-section" aria-label={`${release.title} official video`}>
-        <div className="video-frame">
-          {videoId ? (
-            <iframe
-              src={`https://www.youtube.com/embed/${encodeURIComponent(videoId)}?rel=0`}
-              title={`${release.title} — official video by ${release.artist}`}
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerPolicy="strict-origin-when-cross-origin"
-              allowFullScreen
-            />
-          ) : (
-            <div className="video-placeholder">
-              <span className="play-mark" aria-hidden="true">▶</span>
-              <p>Add a YouTube video URL in <code>src/release.ts</code></p>
-            </div>
-          )}
-        </div>
-      </section>
-
-      <SilverMistDivider withMark />
-
       <section className="listen-section" aria-labelledby="listen-heading">
         <div className="listen-intro">
           <h2 id="listen-heading">Listen everywhere</h2>
@@ -161,6 +139,27 @@ function App() {
         ) : (
           <p className="empty-note">Add streaming links in <code>src/release.ts</code> to show them here.</p>
         )}
+      </section>
+
+      <SilverMistDivider withMark />
+
+      <section className="video-section" aria-label={`${release.title} official video`}>
+        <div className="video-frame">
+          {videoId ? (
+            <iframe
+              src={`https://www.youtube.com/embed/${encodeURIComponent(videoId)}?rel=0`}
+              title={`${release.title} — official video by ${release.artist}`}
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+            />
+          ) : (
+            <div className="video-placeholder">
+              <span className="play-mark" aria-hidden="true">▶</span>
+              <p>Add a YouTube video URL in <code>src/release.ts</code></p>
+            </div>
+          )}
+        </div>
       </section>
 
       <footer className="footer">

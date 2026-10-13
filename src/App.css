@@ -178,8 +178,7 @@
   text-align: center;
 }
 
-.section-heading h2,
-.listen-intro h2 {
+.section-heading h2 {
   margin: 0;
   color: var(--ink);
   font-family: inherit;
@@ -237,11 +236,6 @@
 .listen-section {
   display: block;
   padding: 54px 0 78px;
-}
-
-.listen-intro {
-  margin-bottom: 28px;
-  text-align: center;
 }
 
 .platform-grid {
@@ -407,6 +401,11 @@ a:focus-visible {
   outline-offset: 4px;
 }
 
+@media (min-width: 721px) {
+  .wordmark { font-size: clamp(16px, 1.7vw, 20px); }
+  .hero h1 { font-size: clamp(56px, 8vw, 104px); }
+}
+
 @media (max-width: 720px) {
   .release-page { --page-gutter: clamp(18px, 5vw, 36px); }
   .topbar { min-height: 44px; }
@@ -423,8 +422,6 @@ a:focus-visible {
   }
   .video-section { padding: 12px 0; }
   .release-divider { display: none; }
-  .listen-intro { margin-bottom: 12px; }
-  .listen-intro h2 { font-size: clamp(20px, 5.3vw, 30px); }
   .listen-section {
     padding: 12px 0;
   }

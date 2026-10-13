@@ -116,10 +116,7 @@ function App() {
         {/* <img className="silver-mist" src="/images/gotham/08-silver-mist.webp" alt="" /><SilverMistDivider /> */}
       </section>
 
-      <section className="listen-section" aria-labelledby="listen-heading">
-        <div className="listen-intro">
-          <h2 id="listen-heading">Listen everywhere</h2>
-        </div>
+      <section className="listen-section" aria-label="Streaming platforms">
         {platforms.length > 0 ? (
           <div className="platform-grid">
             {platforms.map((platform) => (
